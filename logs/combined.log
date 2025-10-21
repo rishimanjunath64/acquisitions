@@ -32,3 +32,12 @@
 {"level":"info","message":"::1 - - [21/Oct/2025:03:54:19 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
 {"level":"info","message":"User signed out successfully","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [21/Oct/2025:03:54:56 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"hello from acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:05:40:30 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:05:40:30 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.49.0"}
+{"level":"info","message":"::1 - - [21/Oct/2025:05:45:24 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.49.0"}
+{"level":"info","message":"::1 - - [21/Oct/2025:05:45:44 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.49.0"}
+{"level":"info","message":"::1 - - [21/Oct/2025:05:45:46 +0000] \"GET /health HTTP/1.1\" 403 68 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
