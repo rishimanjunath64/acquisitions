@@ -9,6 +9,7 @@ export const aj = arcjet({
       allow: [
         "CATEGORY:SEARCH_ENGINE",
         "CATEGORY:PREVIEW",
+        "CATEGORY:DEVELOPER",
       ],
     }),
     slidingWindow({
