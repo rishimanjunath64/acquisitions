@@ -5,7 +5,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoutes from '#routes/auth.routes.js';
-import securityMiddleware from '#middleware/security.middleware.js'
+import securityMiddleware from '#middleware/security.middleware.js';
 import userRoutes from '#routes/users.routes.js';
 
 const app = express();
@@ -24,7 +24,7 @@ app.use(
 );
 
 app.get('/', (req, res) => {
-  logger.info("hello from acquisitions!");
+  logger.info('hello from acquisitions!');
   res.status(200).send('hello from acquisitions');
 });
 
@@ -47,8 +47,8 @@ app.use('/api/auth',authRoutes);
 app.use('/api/users',userRoutes);
 
 app.use((req,res)=>{
-    res.status(404).json({error:"route not found"});
-})
+  res.status(404).json({error:'route not found'});
+});
 
 
 export default app;
