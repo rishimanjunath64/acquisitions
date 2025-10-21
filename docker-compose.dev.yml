@@ -10,8 +10,8 @@ services:
     environment:
       NEON_API_KEY: ${NEON_API_KEY}
       NEON_PROJECT_ID: ${NEON_PROJECT_ID}
-      PARENT_BRANCH_ID: ${PARENT_BRANCH_ID:-main}  # Creates ephemeral branches
-      DELETE_BRANCH: ${DELETE_BRANCH:-true}  # Auto-cleanup when container stops
+      PARENT_BRANCH_ID: ${PARENT_BRANCH_ID:-main} # Creates ephemeral branches
+      DELETE_BRANCH: ${DELETE_BRANCH:-true} # Auto-cleanup when container stops
     volumes:
       # Optional: Persist branch per Git branch
       - ./.neon_local/:/tmp/.neon_local
@@ -19,7 +19,7 @@ services:
     networks:
       - app-network
     healthcheck:
-      test: ["CMD", "pg_isready", "-h", "localhost", "-p", "5432"]
+      test: ['CMD', 'pg_isready', '-h', 'localhost', '-p', '5432']
       interval: 5s
       timeout: 3s
       retries: 5

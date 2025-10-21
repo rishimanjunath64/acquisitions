@@ -10,7 +10,7 @@ if (process.env.NODE_ENV === 'development') {
   config = {
     fetchEndpoint: `http://${neonLocalHost}:5432/sql`,
     useSecureWebSocket: false,
-    poolQueryViaFetch: true
+    poolQueryViaFetch: true,
   };
 }
 
@@ -19,7 +19,7 @@ const db = drizzle(sql);
 
 async function main() {
   console.log('🔄 Running migrations...');
-  
+
   try {
     await migrate(db, { migrationsFolder: './drizzle' });
     console.log('✅ Migrations completed successfully!');

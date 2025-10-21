@@ -11,10 +11,11 @@ A Node.js Express API with Neon Database integration, featuring ephemeral databa
    - Neon account ([sign up here](https://console.neon.tech))
 
 2. **Set up environment:**
+
    ```powershell
    # Windows PowerShell
    Copy-Item .env.development .env
-   
+
    # Update .env with your Neon credentials:
    # - NEON_API_KEY (from https://console.neon.tech/app/settings/api-keys)
    # - NEON_PROJECT_ID (from Project Settings → General)
@@ -22,10 +23,11 @@ A Node.js Express API with Neon Database integration, featuring ephemeral databa
    ```
 
 3. **Start development environment:**
+
    ```powershell
    # Using the helper script
    .\start-dev.ps1
-   
+
    # Or manually
    docker-compose -f docker-compose.dev.yml up --build
    ```
@@ -37,9 +39,10 @@ A Node.js Express API with Neon Database integration, featuring ephemeral databa
 ### Production (with Neon Cloud)
 
 1. **Set up production environment:**
+
    ```powershell
    Copy-Item .env.production .env.production.local
-   
+
    # Update .env.production.local with your Neon Cloud connection string
    ```
 
@@ -55,6 +58,7 @@ For complete setup instructions, troubleshooting, and advanced configuration, se
 ## 🏗️ Architecture
 
 ### Development Environment
+
 ```
 ┌─────────────────┐
 │   Your App      │
@@ -75,6 +79,7 @@ For complete setup instructions, troubleshooting, and advanced configuration, se
 - Optional: persist branches per Git branch
 
 ### Production Environment
+
 ```
 ┌─────────────────┐
 │   Your App      │
@@ -95,6 +100,7 @@ For complete setup instructions, troubleshooting, and advanced configuration, se
 ## 🛠️ Available Scripts
 
 ### Local Development (without Docker)
+
 ```bash
 npm run dev          # Start with hot-reload
 npm run lint         # Check code style
@@ -106,6 +112,7 @@ npm run db:studio    # Open Drizzle Studio
 ```
 
 ### Docker Commands
+
 ```powershell
 # Development
 docker-compose -f docker-compose.dev.yml up --build
@@ -172,34 +179,41 @@ docker-compose -f docker-compose.dev.yml up
 ## 🔧 Environment Variables
 
 ### Development
-| Variable | Description | Example |
-|----------|-------------|---------|
-| `NEON_API_KEY` | Neon API key | `neon_api_xxxxx` |
-| `NEON_PROJECT_ID` | Your project ID | `purple-moon-12345` |
-| `PARENT_BRANCH_ID` | Parent branch | `main` |
-| `ARCJET_KEY` | Security key | `ajkey_xxxxx` |
+
+| Variable           | Description     | Example             |
+| ------------------ | --------------- | ------------------- |
+| `NEON_API_KEY`     | Neon API key    | `neon_api_xxxxx`    |
+| `NEON_PROJECT_ID`  | Your project ID | `purple-moon-12345` |
+| `PARENT_BRANCH_ID` | Parent branch   | `main`              |
+| `ARCJET_KEY`       | Security key    | `ajkey_xxxxx`       |
 
 ### Production
-| Variable | Description | Example |
-|----------|-------------|---------|
+
+| Variable       | Description    | Example                                   |
+| -------------- | -------------- | ----------------------------------------- |
 | `DATABASE_URL` | Neon Cloud URL | `postgresql://...@ep-xxxxx.neon.tech/...` |
-| `ARCJET_KEY` | Security key | `ajkey_xxxxx` |
+| `ARCJET_KEY`   | Security key   | `ajkey_xxxxx`                             |
 
 ## 🐛 Troubleshooting
 
 ### "Connection refused" error
+
 Wait for Neon Local to be healthy (usually 5-10 seconds):
+
 ```powershell
 docker-compose -f docker-compose.dev.yml ps
 ```
 
 ### Database not migrating
+
 Run migrations inside the container:
+
 ```powershell
 docker-compose -f docker-compose.dev.yml exec app npm run db:migrate
 ```
 
 ### Ephemeral branches not cleaning up
+
 Check `DELETE_BRANCH=true` in `.env` and ensure you're stopping containers properly.
 
 For more troubleshooting, see [DOCKER-SETUP.md](./DOCKER-SETUP.md#troubleshooting).

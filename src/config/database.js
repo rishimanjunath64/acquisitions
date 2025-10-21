@@ -11,7 +11,10 @@ const DATABASE_URL = process.env.DATABASE_URL;
 // Use node-postgres for Docker/Neon Local, neon-http for production
 let db, sql;
 
-if (process.env.NODE_ENV === 'development' && DATABASE_URL.includes('neon-local')) {
+if (
+  process.env.NODE_ENV === 'development' &&
+  DATABASE_URL.includes('neon-local')
+) {
   // Docker environment with Neon Local - use standard PostgreSQL driver
   const pool = new pg.Pool({
     connectionString: DATABASE_URL,
