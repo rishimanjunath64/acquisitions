@@ -8,3 +8,27 @@
 {"level":"info","message":"::1 - - [20/Oct/2025:03:16:37 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [20/Oct/2025:03:54:51 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 200 31 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [20/Oct/2025:03:56:51 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 200 31 \"-\" \"PostmanRuntime/7.48.0\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: User not found","service":"acquisitions-api"}
+{"level":"error","message":"Sign in error User not found","service":"acquisitions-api","stack":"Error: User not found\n    at authenticateUser (file:///C:/Users/rishi/OneDrive/Attachments/Desktop/docker-course/acquisitions/src/services/auth.service.js:66:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signIn (file:///C:/Users/rishi/OneDrive/Attachments/Desktop/docker-course/acquisitions/src/controllers/auth.controller.js:65:18)"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:41:42 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 31 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:43:35 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:44:01 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:45:15 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:45:41 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:45:52 +0000] \"POST /login HTTP/1.1\" 404 145 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: User not found","service":"acquisitions-api"}
+{"level":"error","message":"Sign in error User not found","service":"acquisitions-api","stack":"Error: User not found\n    at authenticateUser (file:///C:/Users/rishi/OneDrive/Attachments/Desktop/docker-course/acquisitions/src/services/auth.service.js:66:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signIn (file:///C:/Users/rishi/OneDrive/Attachments/Desktop/docker-course/acquisitions/src/controllers/auth.controller.js:65:18)"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:46:16 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 31 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:48:09 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:49:54 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:52:30 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:52:32 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User harish@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: harish@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:53:21 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 102 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:54:01 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User harish@gmail.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: harish@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:54:19 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User signed out successfully","service":"acquisitions-api"}
+{"level":"info","message":"::1 - - [21/Oct/2025:03:54:56 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
