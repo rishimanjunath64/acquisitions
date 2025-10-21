@@ -207,3 +207,90 @@
 {"level":"info","message":"User registered successfully: test3@example.com","service":"acquisitions-api"}
 {"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:09:27:53 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 108 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
 {"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:09:27:53 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 108 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"hello from acquisitions!","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:11:52:44 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:11:52:44 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: User not found","service":"acquisitions-api"}
+{"level":"error","message":"Sign in error User not found","service":"acquisitions-api","stack":"Error: User not found\n    at authenticateUser (file:///app/src/services/auth.service.js:66:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signIn (file:///app/src/controllers/auth.controller.js:65:18)"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:11:53:46 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 31 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:11:53:46 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 31 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"error","message":"Error authenticating user: Error: Invalid password","service":"acquisitions-api"}
+{"level":"error","message":"Sign in error Invalid password","service":"acquisitions-api","stack":"Error: Invalid password\n    at authenticateUser (file:///app/src/services/auth.service.js:75:13)\n    at async signIn (file:///app/src/controllers/auth.controller.js:65:18)"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:11:55:26 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 31 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:11:55:26 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 31 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User harish@gmail.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: harish@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:11:55:34 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:11:55:34 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:03:10 +0000] \"POST /api/users/3 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:03:10 +0000] \"POST /api/users/3 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:07:12 +0000] \"POST /api/users/3 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:07:12 +0000] \"POST /api/users/3 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:07:23 +0000] \"POST /api/users/2 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:07:23 +0000] \"POST /api/users/2 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:08:11 +0000] \"POST /api/users/2 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:08:11 +0000] \"POST /api/users/2 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:08:22 +0000] \"POST /api/users/2 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:08:22 +0000] \"POST /api/users/2 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User harish@gmail.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: harish@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:11:58 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:11:58 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:14:15 +0000] \"POST /api/users/2 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:14:15 +0000] \"POST /api/users/2 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User harish@gmail.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: harish@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:15:03 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:15:03 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:15:21 +0000] \"POST /api/users/1 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:15:21 +0000] \"POST /api/users/1 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User harish@gmail.com authenticated successfully","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: harish@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:15:59 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:15:59 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 114 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:19:11 +0000] \"POST /api/users/1 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:19:11 +0000] \"POST /api/users/1 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: harish@gmail.com (user)","service":"acquisitions-api"}
+{"level":"info","message":"Getting user by id: 1","service":"acquisitions-api"}
+{"level":"info","message":"User harish@gmail.com retrieved successfully","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:19:32 +0000] \"GET /api/users/1 HTTP/1.1\" 200 194 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:19:32 +0000] \"GET /api/users/1 HTTP/1.1\" 200 194 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: harish@gmail.com (user)","service":"acquisitions-api"}
+{"level":"info","message":"Getting user by id: 2","service":"acquisitions-api"}
+{"level":"info","message":"User john@example.com retrieved successfully","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:19:42 +0000] \"GET /api/users/2 HTTP/1.1\" 200 196 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:19:42 +0000] \"GET /api/users/2 HTTP/1.1\" 200 196 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: harish@gmail.com (user)","service":"acquisitions-api"}
+{"level":"info","message":"Getting user by id: 3","service":"acquisitions-api"}
+{"level":"info","message":"User test@example.com retrieved successfully","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:19:51 +0000] \"GET /api/users/3 HTTP/1.1\" 200 197 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:19:51 +0000] \"GET /api/users/3 HTTP/1.1\" 200 197 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: harish@gmail.com (user)","service":"acquisitions-api"}
+{"level":"warn","message":"Access denied for user harish@gmail.com with role user. Required: admin","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:20:00 +0000] \"DELETE /api/users/3 HTTP/1.1\" 403 62 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:20:00 +0000] \"DELETE /api/users/3 HTTP/1.1\" 403 62 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User admin@gmail.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: admin@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:24:15 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 106 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:24:15 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 106 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: admin@gmail.com (admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting user by id: 1","service":"acquisitions-api"}
+{"level":"info","message":"User harish@gmail.com retrieved successfully","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:25:24 +0000] \"GET /api/users/1 HTTP/1.1\" 200 194 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:25:24 +0000] \"GET /api/users/1 HTTP/1.1\" 200 194 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: admin@gmail.com (admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting user by id: 2","service":"acquisitions-api"}
+{"level":"info","message":"User john@example.com retrieved successfully","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:25:33 +0000] \"GET /api/users/2 HTTP/1.1\" 200 196 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:25:33 +0000] \"GET /api/users/2 HTTP/1.1\" 200 196 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: admin@gmail.com (admin)","service":"acquisitions-api"}
+{"level":"info","message":"Getting user by id: 3","service":"acquisitions-api"}
+{"level":"info","message":"User test@example.com retrieved successfully","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:25:40 +0000] \"GET /api/users/3 HTTP/1.1\" 200 197 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:25:40 +0000] \"GET /api/users/3 HTTP/1.1\" 200 197 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User authenticated: admin@gmail.com (admin)","service":"acquisitions-api"}
+{"level":"info","message":"Deleting user: 3","service":"acquisitions-api"}
+{"level":"info","message":"User test@example.com deleted successfully","service":"acquisitions-api"}
+{"level":"info","message":"User test@example.com deleted successfully","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:25:46 +0000] \"DELETE /api/users/3 HTTP/1.1\" 200 115 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:172.20.0.1 - - [21/Oct/2025:12:25:46 +0000] \"DELETE /api/users/3 HTTP/1.1\" 200 115 \"-\" \"PostmanRuntime/7.49.0\"","service":"acquisitions-api"}
