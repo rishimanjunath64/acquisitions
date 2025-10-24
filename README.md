@@ -1,12 +1,8 @@
 <<<<<<< HEAD
-
 # Acquisitions API `1122222
-
-=======
-
+========
 # Acquisitions API `11 1
-
-> > > > > > > 7b788514866d81f5f323bbe0b399ca70364e3f94
+>>>>>>> 7b788514866d81f5f323bbe0b399ca70364e3f94
 
 A Node.js Express API with Neon Database integration, featuring ephemeral database branches for development and production-ready Docker configuration.
 
