@@ -1,8 +1,8 @@
 name: Docker Build and Push
 
-on :
-  push :
-    branches :
+on:
+  push:
+    branches:
       - main
   workflow_dispatch:
     inputs:
@@ -14,11 +14,11 @@ env:
   REGISTRY: docker.io
   IMAGE_NAME: ${{ secrets. DOCKER_USERNAME }}/kubernetes-demo-api
 
-jobs :
+jobs:
   build-and-push:
     name: Build and Push Docker Image
     runs-on: ubuntu-latest
-    steps :
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Set up Docker Buildx
